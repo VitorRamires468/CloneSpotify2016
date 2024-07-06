@@ -68,6 +68,10 @@ footer img {
 }
 
 @media only screen and (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   section div.carousel h1.title {
     font-size: 2rem;
   }
@@ -84,8 +88,9 @@ footer img {
   }
 }
 
-@media (min-swidth: 577px) and (max-width: 768px) {
-  * {
+@media (min-width: 577px) and (max-width: 768px) {
+  html,
+  body {
     overflow-x: hidden;
   }
   section div.carousel h1.title {
