@@ -1,5 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body#body {
-  background: url("../images/capa.png") repeat-y, url("../images/ruido.png"),
+  background: url("../images/capa.png") repeat,
+    url("../images/ruido.png") repeat,
     linear-gradient(to right, rgb(233, 61, 181), rgb(94, 0, 138));
   background-attachment: fixed;
 }
@@ -78,9 +84,12 @@ footer img {
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-swidth: 577px) and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
   section div.carousel h1.title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
